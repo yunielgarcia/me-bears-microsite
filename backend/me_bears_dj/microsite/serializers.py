@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import ExampleModel
+from .models import Content
 
 
-class ExampleModelSerializer(serializers.ModelSerializer):
+class ContentModelSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ExampleModel
-        fields = ('first_name', 'last_name')
+        model = Content
+        fields = '__all__'
